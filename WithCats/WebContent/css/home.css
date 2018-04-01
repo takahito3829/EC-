@@ -1,0 +1,156 @@
+@charset "UTF-8";
+
+
+body {
+	margin: 0;
+	font-family: "Hiragino Kaku Gothic ProN";
+}
+
+a {
+  text-decoration: none;
+}
+
+header{
+    position:fixed;
+    top:0px;
+    height:65px;
+    width:100%;
+    background-color: rgba(34, 49, 52, 0.9);
+    z-index:10;
+}
+
+.header-left{
+    float:left;
+}
+
+.logo{
+     width:80px;
+     margin-top:0px;
+}
+
+.header-right {
+    float:right;
+    transition:all 0.5s;
+}
+
+.header-right a{
+    float:right;
+    line-height:15px;
+    background-color:gray;
+    opacity:0.9;
+    color:white;
+    padding:25px;
+    display:block;
+    border:black solid 0.2px;
+}
+
+.header-right:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.top-wrapper {
+	padding-top: 50px;
+	padding-bottom: 200px;
+	padding-right: 0px;
+	padding-left: 100px;
+	background-image:
+		url(https://www.pakutaso.com/shared/img/thumb/TSURU170211-020_TP_V.jpg);
+	background-size: cover;
+	color: black;
+	text-align: center;
+}
+
+.container {
+	width: 1170px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.top-wrapper h1 {
+	opacity: 0.7;
+	font-size: 60px;
+	letter-spacing: 5px;
+}
+
+.top-wrapper p {
+	opacity: 0.7;
+	font-size: 20px;
+	padding-left: 600px;
+}
+
+.btn-wrapper {
+	margin-right: 0px;
+	margin-top: 100px;
+	text-align: right;
+	font-size: 20px;
+}
+
+.signup {
+	background-color: #239b76;
+}
+
+
+.btn {
+	padding: 8px 8px;
+	color: white;
+	display: inline-block;
+	opacity: 0.8;
+	border-radius: 4px;
+}
+
+.btn:hover {
+	opacity: 1;
+}
+
+
+
+
+
+.contents img {
+	width: 50%;
+	float: left;
+}
+
+.message-wrapper {
+	border-bottom: 1px solid #eee;
+	padding-bottom: 80px;
+	text-align: center;
+	background-color:#FFFFF0;
+}
+
+.message {
+	padding: 20px 40px;
+	margin-top:30px;
+	background-color: #5dca88;
+	cursor: pointer;
+	box-shadow: 0 7px #1a7940;
+}
+
+.message:active {
+	position: relative;
+	top: 7px;
+	box-shadow: none;
+}
+
+footer img {
+	width: 150px;
+}
+
+footer p {
+	color: #b3aeb5;
+	font-size: 12px;
+}
+
+footer {
+	padding-top: 30px;
+}
+
+.footer-left {
+	float: left;
+}
+
+.footer-right {
+	float: right;
+	margin-top: 0;
+}
+
