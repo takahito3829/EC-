@@ -51,7 +51,7 @@
 				<h3>Let's explore the worlds with cats!</h3>
 			</div>
 			<span class="btn message"> <a
-				href='<s:url action="CatsListAction"/>'>早速参加する</a>
+				href='<s:url action="ListAction"/>'>早速参加する</a>
 			</span>
 		</div>
 	</div>
