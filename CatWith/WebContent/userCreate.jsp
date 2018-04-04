@@ -17,7 +17,7 @@
 	<style type="text/css">
 		/* ========TAG LAYOUT======== */
 		body {
-		   margin:0;
+		   margin-top:150px;
 		   padding:0;
 		   line-height:1.6;
 		   letter-spacing:1px;
@@ -55,10 +55,9 @@
 	</style>
 </head>
 <body>
-	<div id="header">
-	 	<div id="pr">
-		</div>
-	</div>
+	<jsp:include page="include_header.jsp" />
+
+
 	<div id="main">
 		<div id="top">
 			<p>UserCreate</p>

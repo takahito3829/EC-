@@ -6,47 +6,6 @@ body {
 	font-family: "Hiragino Kaku Gothic ProN";
 }
 
-a {
-  text-decoration: none;
-}
-
-header{
-    position:fixed;
-    top:0px;
-    height:65px;
-    width:100%;
-    background-color: rgba(34, 49, 52, 0.9);
-    z-index:10;
-}
-
-.header-left{
-    float:left;
-}
-
-.logo{
-     width:80px;
-     margin-top:0px;
-}
-
-.header-right {
-    float:right;
-    transition:all 0.5s;
-}
-
-.header-right a{
-    float:right;
-    line-height:15px;
-    background-color:gray;
-    opacity:0.9;
-    color:white;
-    padding:25px;
-    display:block;
-    border:black solid 0.2px;
-}
-
-.header-right:hover{
-    background-color: rgba(255, 255, 255, 0.5);
-}
 
 .top-wrapper {
 	padding-top: 50px;
@@ -86,9 +45,26 @@ header{
 }
 
 .signup {
-	background-color: #239b76;
+	background-color: #239b76;;
+
 }
 
+.login{
+	background-color: #3b5998 ;
+
+}
+
+.login2{
+	background-color: #55acee ;
+}
+
+a:link	{
+	color :white;
+}
+
+a:visited	{
+	color : white;
+}
 
 .btn {
 	padding: 8px 8px;

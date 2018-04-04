@@ -13,16 +13,7 @@
 </head>
 <body>
 
-	<header>
-		<div class="header-left">
-			<img class="logo" src="">
-		</div>
-		<div class="header-right">
-			<a href='<s:url action="LoginAction"/>'>ログイン</a>
-			<a href='<s:url action="InquiryAction"/>'>お問合わせ</a>
-			<a href='<s:url action="HomeAction"/>'>HOME</a>
-		</div>
-	</header>
+<jsp:include page="include_header.jsp" />
 
 	<div class="top-wrapper">
 		<div class="container">
@@ -36,9 +27,14 @@
 					<a href='<s:url action="UserCreateAction"/>'>ユーザー登録</a>
 				</div>
 
+				<br>
 				<div class="btn login">
 					<a href='<s:url action="LoginAction"/>'>ログイン</a>
 				</div>
+				<div class="btn login2">
+					<a href='<s:url action="LoginAction"/>'>ログイン</a>
+				</div>
+
 			</div>
 		</div>
 	</div>

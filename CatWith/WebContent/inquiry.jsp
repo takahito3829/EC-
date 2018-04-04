@@ -16,17 +16,7 @@
 
 <body>
 
-
-	<header>
-		<div class="header-left">
-			<img class="logo" src="">
-		</div>
-		<div class="header-right">
-			<a href='<s:url action="LoginAction"/>'>ログイン</a> <a
-				href='<s:url action="InquiryAction"/>'>お問合わせ</a> <a
-				href='<s:url action="HomeAction"/>'>HOME</a>
-		</div>
-	</header>
+<jsp:include page="include_header.jsp" />
 
 
 	<div class="top-wrapper">
