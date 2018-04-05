@@ -52,7 +52,6 @@
 
 
 body {
-
 	padding:0;
 	line-height:1.6;
 	letter-spacing:1px;

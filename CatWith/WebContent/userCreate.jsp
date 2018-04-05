@@ -16,53 +16,75 @@
 	<title>UserCreate画面</title>
 	<style type="text/css">
 		/* ========TAG LAYOUT======== */
-		body {
-		   margin-top:150px;
-		   padding:0;
-		   line-height:1.6;
-		   letter-spacing:1px;
-		   font-family:Verdana, Helvetica, sans-serif;
-		   font-size:12px;
-		   color:#333;
-		   background:#fff;
-		}
-		table {
-			text-align:center;
-			margin:0 auto;
-		}
-		/* ========ID LAYOUT======== */
-		#top {
-		   width:780px;
-		   margin:30px auto;
-		   border:1px solid #333;
-		}
-		#header {
-		   width: 100%;
-		   height: 80px;
-		   background-color: black;
-		}
-		#main {
-		   width: 100%;
-		   height: 500px;
-		   text-align: center;
-		}
-		#footer {
-			width: 100%;
-			height: 80px;
-			background-color: black;
-			clear:both;
-		}
+
+
+.top-wrapper {
+	padding-top: 50px;
+	padding-bottom: 200px;
+	padding-right: 0px;
+	padding-left: 100px;
+	background-image:
+		url("./images/signup.jpg");
+	background-size: cover;
+	color: black;
+	text-align: center;
+	height:500px;
+}
+
+.container {
+	width: 1170px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.container h1{
+	color:#BAD3FF;
+  	letter-spacing:4px;
+    font-size:60px;
+    padding-top:300px;
+    padding-left:550px;
+    margin-bottom:0px;
+}
+
+.container h3{
+	color:#BAD3FF;
+  	letter-spacing:4px;
+    font-size:30px;
+    padding-left:550px;
+}
+
+.contents {
+	width: 100%;
+	height: 300px;
+	text-align: center;
+	margin-top:50px;
+	background-color:#FFFFF0;
+	margin-top:0px;
+	padding-top:50px;
+}
+
+
+table {
+	text-align:center;
+	margin:0 auto;
+}
+
+
+
 	</style>
 </head>
 <body>
 	<jsp:include page="include_header.jsp" />
 
+	<div class="top-wrapper">
+	<div class="container">
+		<h1>SignUp</h1>
+		<h3>ユーザー登録</h3>
+	</div>
+</div>
 
-	<div id="main">
-		<div id="top">
-			<p>UserCreate</p>
-		</div>
-		<div>
+
+		<div class="contents">
 			<s:if test="errorMessage != ''"><!-- UserCreateConfirmのerrormessageがカラでないなら。 -->
 				<s:property value="errorMessage" escape="false" /><!-- escapeの初期値はtrueだがtrueだとエラーメッセージ -->
 				<!-- を出すときの<brとかのコードも文字列で表示されてしまう。falseならコードとして表示。> -->
@@ -100,10 +122,6 @@
 				<span>前画面に戻る場合は</span><a href='<s:url action="HomeAction" />'>こちら</a>
 			</div>
 		</div>
-	</div>
-		<div id="footer">
-	 	<div id="pr">
-		</div>
-	</div>
+	<jsp:include page="include_footer.jsp" />
 </body>
 </html>
