@@ -52,21 +52,20 @@
 		</div>
 	</div>
 
+	<div class="contents-wrapper">
+		<div class="contents-left"><img src="./images/leo.jpg"></div>
+		<div class="contents-right"><img src="./images/relaxed.jpg"></div>
+		<div class="contents-left2"><img src="./images/staring.jpg"></div>
+		<div class="contents-right2"><img src="./images/surprised.jpg"></div>
+		<div class="popup">The more cats around, the happier people become.</div>
 
-	<footer>
-		<div class="footer left">
-			<img
-				src="http://www.si-serv.com/blog/wp-content/uploads/2010/05/cat03.jpg">
-			<p>The More cats, the Happier people become.</p>
-		</div>
-		<div class="footer-right">
-			<ul>
-				<li>お問い合わせ</li>
-				<li>運営団体</li>
-				<li>利用規約</li>
-			</ul>
-		</div>
-	</footer>
+	</div>
+
+	<div class="message-wrapper2">
+		<h3>〜すべての猫を愛する者たちへ送る〜</h3>
+	</div>
+
+<jsp:include page="include_footer.jsp" />
 
 
 </body>

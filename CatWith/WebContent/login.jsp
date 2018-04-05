@@ -74,7 +74,7 @@ table {
 }
 #main {
 	width: 100%;
-	height: 500px;
+	height: 300px;
 	text-align: center;
 	margin-top:50px;
 	background-color:#FFFFF0;
@@ -127,10 +127,7 @@ table {
 		</div>
 
 
-<div id="footer">
-	<div id="pr">
-	</div>
-</div>
+<jsp:include page="include_footer.jsp" />
 
 </body>
 </html>

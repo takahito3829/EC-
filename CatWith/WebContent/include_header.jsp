@@ -71,6 +71,9 @@ header{
 
 
 
+
+
+
 </style>
 
 
@@ -79,6 +82,7 @@ header{
 			<div class="logo"><a href='<s:url action="HomeAction"/>'>CatWith</a></div>
 		</div>
 		<div class="header-right">
+
 
 			<s:if test="#session.loginFlg">
 				<a href='<s:url action="InquiryAction"/>'>お問合わせ</a>
@@ -90,18 +94,13 @@ header{
 				<a href='<s:url action="LoginAction"/>'>ログイン</a>
 			</s:else>
 
-<span style="color:white;line-height:60px;">
+
+<span style="color:white;line-height:60px;padding:15px;">
 	<s:if test="#session.loginFlg">
 		ようこそ! <s:property value="#session.userName"/>さん
 	</s:if><s:else>
 		ようこそ! ゲストさん
 	</s:else></span>
-
-
-
-
-
-
 
 		</div>
 </header>

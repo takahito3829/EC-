@@ -26,8 +26,9 @@ public class InquiryConfirmAction extends ActionSupport implements SessionAware 
 
 	public String execute() {
 
+
 		result=ERROR;
-		session.clear();
+
 
 
 			if(familyName!=null &&firstName!=null &&familyNameKana!=null &&firstNameKana!=null &&phoneNumber!=null && mail!=null &&content!=null &&area!=null){
