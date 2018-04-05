@@ -21,8 +21,23 @@ header{
 }
 
 .logo{
-     width:80px;
+     width:120px;
      margin-top:0px;
+     line-height:65px;
+     color:white;
+     background-color:black;
+     padding-left:25px;
+     padding-right:25px;
+     font-size:30px;
+     font-family:cursive;
+}
+
+.header-right a:link	{
+	color :white;
+}
+
+.header-right a:visited	{
+	color : white;
 }
 
 .header-right {
@@ -52,7 +67,7 @@ header{
 
 <header>
 	<div class="header-left">
-			<img class="logo" src="">
+			<div class="logo"><a href='<s:url action="HomeAction"/>'>CatWith</a></div>
 		</div>
 		<div class="header-right">
 			<a href='<s:url action="LoginAction"/>'>ログイン</a>

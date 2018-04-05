@@ -11,12 +11,48 @@
 	<meta http-equiv="imagetoolbar" content="no" />
 	<meta name="description" content="" />
 	<meta name="keywords" content="" />
-	<title>Home画面</title>
+	<title>ログイン</title>
 
 <style type="text/css">
 
+.top-wrapper {
+	padding-top: 50px;
+	padding-bottom: 200px;
+	padding-right: 0px;
+	padding-left: 100px;
+	background-image:
+		url("./images/login.jpg");
+	background-size: cover;
+	color: black;
+	text-align: center;
+	height:500px;
+}
+
+.container {
+	width: 1170px;
+	padding: 15px;
+	margin: 0 auto;
+}
+
+.container h1{
+	color:#BAD3FF;
+  	letter-spacing:4px;
+    font-size:60px;
+    padding-top:80px;
+    padding-left:550px;
+    margin-bottom:0px;
+}
+
+.container h3{
+	color:#BAD3FF;
+  	letter-spacing:4px;
+    font-size:30px;
+    padding-left:550px;
+}
+
+
 body {
-	margin-top:150px;
+
 	padding:0;
 	line-height:1.6;
 	letter-spacing:1px;
@@ -30,11 +66,7 @@ table {
 	margin:0 auto;
 }/
 * ========ID LAYOUT======== */
-#top {
-	width:780px;
-	margin:30px auto;
-	border:1px solid #333;
-}
+
 #header {
 	width: 100%;
 	height: 80px;
@@ -44,13 +76,12 @@ table {
 	width: 100%;
 	height: 500px;
 	text-align: center;
+	margin-top:50px;
+	background-color:#FFFFF0;
+	margin-top:0px;
+	padding-top:50px;
 }
-#footer {
-	width: 100%;
-	height: 80px;
-	background-color: black;
-	clear:both;
-}
+
 
 	</style>
 </head>
@@ -60,17 +91,30 @@ table {
 <jsp:include page="include_header.jsp" />
 
 
-	<div id="main">
-		<div id="top">
-		<p>Login</p>
-		</div>
+<div class="top-wrapper">
+	<div class="container">
+		<h1>LOGIN</h1>
+		<h3>ログイン</h3>
+	</div>
+</div>
 
-		<div>
+
+	<div id="main">
 			<h3>商品を購入する際にはログインをお願いします。</h3>
 			<s:form action="LoginAction">
-				<s:textfield name="loginUserId"/>
-				<s:password name="loginPassword"/>
-				<s:submit value="ログイン"/>
+				<table>
+					<tr>
+						<td>ユーザーID:</td>
+						<td><s:textfield name="loginUserId"/></td>
+					</tr>
+					<tr>
+						<td>パスワード:</td>
+						<td>	<s:password name="loginPassword"/></td>
+					</tr>
+
+
+					<s:submit value="ログイン"/>
+				</table>
 			</s:form>
 			<br/>
 
@@ -80,7 +124,7 @@ table {
 				</span>
 			</div>
 		</div>
-	</div>
+
 
 <div id="footer">
 	<div id="pr">

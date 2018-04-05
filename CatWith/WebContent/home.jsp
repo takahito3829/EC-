@@ -8,7 +8,7 @@
 <meta http-equiv="Content-Style-Type" content="text/css" />
 <link rel="stylesheet" href="./css/home.css">
 
-<title>WithCats HOME画面</title>
+<title>CatWith HOME</title>
 
 </head>
 <body>
