@@ -40,6 +40,15 @@ header{
 	color : white;
 }
 
+.header-left a:link	{
+	color :white;
+}
+
+.header-left a:visited	{
+	color : white;
+}
+
+
 .header-right {
     float:right;
     transition:all 0.5s;
@@ -70,8 +79,29 @@ header{
 			<div class="logo"><a href='<s:url action="HomeAction"/>'>CatWith</a></div>
 		</div>
 		<div class="header-right">
-			<a href='<s:url action="LoginAction"/>'>ログイン</a>
-			<a href='<s:url action="InquiryAction"/>'>お問合わせ</a>
-			<a href='<s:url action="HomeAction"/>'>HOME</a>
+
+			<s:if test="#session.loginFlg">
+				<a href='<s:url action="InquiryAction"/>'>お問合わせ</a>
+				<a href='<s:url action="HomeAction"/>'>HOME</a>
+				<a href='<s:url action="LogoutAction"/>'>ログアウト</a>
+			</s:if><s:else>
+				<a href='<s:url action="InquiryAction"/>'>お問合わせ</a>
+				<a href='<s:url action="HomeAction"/>'>HOME</a>
+				<a href='<s:url action="LoginAction"/>'>ログイン</a>
+			</s:else>
+
+<span style="color:white;line-height:60px;">
+	<s:if test="#session.loginFlg">
+		ようこそ! <s:property value="#session.userName"/>さん
+	</s:if><s:else>
+		ようこそ! ゲストさん
+	</s:else></span>
+
+
+
+
+
+
+
 		</div>
 </header>

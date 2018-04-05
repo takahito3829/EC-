@@ -100,6 +100,7 @@ table {
 
 
 	<div id="main">
+	<span style="color:red;font-weight:bold;"><s:if test="userId=null ||userName==null"><s:property value="message"/></s:if></span>
 			<h3>商品を購入する際にはログインをお願いします。</h3>
 			<s:form action="LoginAction">
 				<table>

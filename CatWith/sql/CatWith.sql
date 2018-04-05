@@ -54,5 +54,5 @@ create table user_buy_item_transaction(
 	delete_date datetime
 );
 
-INSERT INTO item_info_tran
+
 

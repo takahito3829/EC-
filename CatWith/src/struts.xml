@@ -66,9 +66,21 @@
 		<!-- LoginAction -->
 		<action name="LoginAction" class="com.internousdev.CatWith.action.LoginAction"
 			method="execute">
-			<result name="success">buyItem.jsp</result>
+			<result name="success">home.jsp</result>
 			<result name="error">login.jsp</result>
+			<result name="login">login.jsp</result>
+
 		</action>
+
+
+		<!-- LogoutAction -->
+		<action name="LogoutAction" class="com.internousdev.CatWith.action.LogoutAction"
+			method="execute">
+			<result name="success">home.jsp</result>
+		</action>
+
+
+
 
 
 
@@ -92,12 +104,6 @@
 			class="com.internousdev.CatWith.action.ListAction" method="execute">
 			<result name="success">list.jsp</result>
 		</action>
-
-
-
-
-
-
 
 
 

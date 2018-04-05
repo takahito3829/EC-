@@ -21,10 +21,25 @@ public class LoginAction extends ActionSupport implements SessionAware{
 	private LoginDAO loginDAO=new LoginDAO();
 	private LoginDTO loginDTO=new LoginDTO();
 	private BuyItemDAO buyItemDAO=new BuyItemDAO();
+	public String message;
 
 		public String execute() {
-			result=ERROR;
+
+			result=LOGIN;
+
+			if(loginUserId==null){
+				return "login";
+			}
+
+			if(loginUserId=="") {
+				setMessage("※ユーザーIDとパスワードを入力して下さい");
+				result=ERROR;
+				return result;
+			}
+
+
 			loginDTO=loginDAO.getLoginUserInfo(loginUserId,loginPassword);
+			session.clear();
 			session.put("loginUser", loginDTO);//loginDTOはオブジェクト,普通の変数ではなくクラスそのものを表すオブジェクト。
 			//DBのユーザー名とパスワードをつめている。
 
@@ -36,6 +51,8 @@ public class LoginAction extends ActionSupport implements SessionAware{
 					session.put("id", buyItemDTO.getId());
 					session.put("buyItem_name",buyItemDTO.getItemName());
 					session.put("buyItem_price", buyItemDTO.getItemPrice());
+					session.put("loginFlg", true);
+					session.put("userName", loginDTO.getUserName());
 
 					return result;
 		}
@@ -56,6 +73,15 @@ public class LoginAction extends ActionSupport implements SessionAware{
 		public void setLoginPassword(String loginPassword) {
 			this.loginPassword=loginPassword;
 		}
+
+		public String getMessage() {
+			return message;
+		}
+
+		public void setMessage(String message) {
+			this.message=message;
+		}
+
 
 		@Override//親クラスの内容を書き換える。
 		public void setSession(Map<String,Object>session) {
